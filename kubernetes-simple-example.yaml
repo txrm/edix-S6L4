@@ -42,9 +42,9 @@ spec:
           ports:
             - containerPort: 6379
           volumeMounts:
-            - mountPath: /redis-master-data-volume
+            - mountPath: /redis-master-data
               name: data
-            - mountPath: /redis-master-volume
+            - mountPath: /redis-master
               name: config
           env: # welp
             - name: MASTER
